@@ -1,91 +1,73 @@
-![vrtk logo](https://raw.githubusercontent.com/thestonefox/VRTK/master/Assets/VRTK/Examples/ExampleResources/Images/logos/vrtk-capsule-clear.png)
-> ### VRTK - Virtual Reality Toolkit
-> A productive VR Toolkit for rapidly building VR solutions in Unity3d.
+[![VRTK logo][VRTK-Image]](#)
 
-[![Slack](http://sysdia2.co.uk/badge.svg)](http://invite.vrtk.io)
-[![Documentation](https://img.shields.io/badge/readme-docs-3484C6.svg)](http://docs.vrtk.io)
-[![Twitter Follow](https://img.shields.io/twitter/follow/vr_toolkit.svg?style=flat&label=twitter)](https://twitter.com/VR_Toolkit)
-[![YouTube](https://img.shields.io/badge/youtube-channel-e52d27.svg)](http://videos.vrtk.io)
-[![Waffle](https://img.shields.io/badge/project-backlog-78bdf2.svg)](http://tracker.vrtk.io)
+> ### VRTK Farm Yard Example - Virtual Reality Toolkit
+> A Farm Yard example scene of how to use VRTK v4 for rapidly building spatial computing solutions in the Unity software.
+> #### Requires the Unity software version 2018.3.10f1 (or above).
 
-| Supported SDK | Download Link |
-|---------------|---------------|
-| VR Simulator | Included |
-| SteamVR | [SteamVR Plugin] |
-| Oculus | [Oculus Utilities] |
-| *Ximmerse | [Ximmerse Unity SDK] |
-| *Daydream | [Google VR SDK for Unity]
+[![License][License-Badge]][License]
+[![Backlog][Backlog-Badge]][Backlog]
+[![Documentation][Academy-Badge]][Academy]
 
-_*experimental_
+[![Slack][Slack-Badge]][Slack]
+[![Videos][Videos-Badge]][Videos]
+[![Twitter][Twitter-Badge]][Twitter]
 
-## Thank You
+## Beta Disclaimer
 
-A big thank you to all those who support VRTK via [Patreon]. A list of supports can be seen in [THANK_YOU_CREDITS.md].
+This VRTK v4 Farm Yard Example project uses a deprecated version of [VRTK.Prefabs] and this will eventually be replaced with the new Tilia repositories that provide the same functionality. This Farm Yard Example project will be considered in the Beta state until the VRTK.Prefabs have been removed and replaced with the Tilia components. A complete list of the Tilia repos can be found at https://www.vrtk.io/tilia.html along with installation instructions.
 
-[![patreon_logo](https://user-images.githubusercontent.com/1029673/28471651-be40a2ea-6e35-11e7-9b01-e1b4a7d533b3.png)](https://www.patreon.com/vrtk)
+If you want to get started with the Tilia repos then check out the [Bowling Tutorial].
 
+## Introduction
 
-### Sponsors
+VRTK aims to make building spatial computing solutions in the [Unity] software fast and easy for beginners as well as experienced developers.
 
-An extra special thank you to our sponsors via [Patreon].
+~~This repository contains an example Unity project showcasing how to use the [VRTK.Prefabs] package to create spatial experiences. If you only wish to use the VRTK.Prefabs within your own Unity project then follow the [VRTK.Prefabs Getting Started] guide.~~
 
-[![image](https://user-images.githubusercontent.com/1029673/27898738-28f0e226-621f-11e7-9fdb-8618d85ba372.png)](https://www.realestate.com.au) [![image](https://user-images.githubusercontent.com/1029673/29113652-8fa11ca4-7ce9-11e7-9e33-88308af369b9.png)](http://alvios.com/)
-
-### Awards
-
-![image](https://user-images.githubusercontent.com/1029673/31736514-e813fa84-b43c-11e7-8444-f8159d2f0085.png)
-
-## Documentation
-
-The documentation for the project can be found within this
-repository in [DOCUMENTATION.md] which includes the up to date
-documentation for this GitHub repository.
-
-Alternatively, the stable versions of the documentation can be viewed
-online at [http://docs.vrtk.io](http://docs.vrtk.io).
-
-## Frequently Asked Questions
-
-If you have an issue or question then check the [FAQ.md] document to see
-if your query has already been answered.
+> You do not need to download anything else to get this Unity project running, simply open the downloaded Unity project in the Unity software as outlined by the Getting Started guide below.
 
 ## Getting Started
 
-> *VRTK offers a VR Simulator that works without any third party SDK, but VR device support requires a supported VR SDK to be imported into the Unity project.*
+### Downloading the project
 
-* Download or clone this repository.
-* Open the folder in Unity to load the project.
-* Have a look at the included example scenes.
+* Download this project repository to your local machine using *one* of the following methods:
+  * Git clone the repository with `git clone https://github.com/ExtendRealityLtd/VRTK.git`
+  * Download the zip file at `https://github.com/ExtendRealityLtd/VRTK/archive/master.zip` and extract it.
 
-The example scenes support all the VRTK supported VR SDKs. To make use of VR devices (besides the included VR Simulator) import the needed third party VR SDK into the project.
+### Opening the downloaded project in the Unity software
 
-For further information about setting up a specific SDK and using VRTK in your own project, check out the
-[GETTING_STARTED.md] document.
+> *Do not* drag and drop the VRTK project download into an existing Unity project. The VRTK repository download *is a Unity project* already and you should not nest a Unity project inside another Unity project. Follow the instructions below for opening the VRTK project within the Unity software. If you only wish to use the VRTK.Prefabs within your own Unity project then follow the [VRTK.Prefabs Getting Started] guide.
 
+#### Using the Unity Hub
 
-## What's In The Box
+* Open the [Unity Hub] panel.
+* Click the `Add` Button:
 
-VRTK is a collection of useful scripts and concepts to aid building VR
-solutions rapidly and easily in Unity3d 5+.
+![image](https://user-images.githubusercontent.com/1029673/68544837-112cb180-03bf-11ea-8118-acd2640cfe30.png)
 
-It covers a number of common solutions such as:
+* Browse to the local directory where the repository was downloaded to and click `Select Folder`:
 
- * Locomotion within virtual space.
- * Interactions like touching, grabbing and using objects
- * Interacting with Unity3d UI elements through pointers or touch.
- * Body physics within virtual space.
- * 2D and 3D controls like buttons, levers, doors, drawers, etc.
- * And much more...
+![image](https://user-images.githubusercontent.com/1029673/68544843-1a1d8300-03bf-11ea-9b88-60f55eddf617.png)
 
-## Examples
+* The VRTK project will now show up in the Unity Hub project window, so select it to open the VRTK project in the Unity software:
 
-A collection of example scenes have been created to aid with
-understanding the different aspects of VRTK.
+![image](https://user-images.githubusercontent.com/1029673/68544856-243f8180-03bf-11ea-8890-1be86159e7f6.png)
 
-A list of the examples can be viewed in [EXAMPLES.md] which includes
-an up to date list of examples showcasing the features of VRTK.
+* The VRTK project will now open within the Unity software.
 
-The example scenes support all the VRTK supported VR SDKs. To make use of VR devices (besides the included VR Simulator) import the needed third party VR SDK into the project.
+#### Opening from within the Unity software
+
+* Select `Main Menu -> File -> Open Project` within the Unity software.
+* Browse to the local directory where the repository was downloaded to and click `Select Folder`.
+* The VRTK project will now open within the Unity software.
+
+### Running the example scene
+
+* Open the `Assets/Samples/Farm/Scenes/ExampleScene` scene.
+* Enable `Maximize On Play` in the Unity Game view control bar to ensure no performance issues are caused by the Unity Editor overhead.
+* Play the scene in the Unity Editor (`CTRL` + `P`).
+* The scene should automatically play within any Unity supported XR hardware.
+* Explore the farm yard and enjoy!
 
 ## Made With VRTK
 
@@ -93,45 +75,41 @@ The example scenes support all the VRTK supported VR SDKs. To make use of VR dev
 
 Many games and experiences have already been made with VRTK.
 
-Check out the [MADEWITHVRTK.md] document to see the full list.
+Check out the [Made With VRTK] website to see the full list.
 
 ## Contributing
 
-I would love to get contributions from you! Follow the instructions
-below on how to make pull requests.
-
-For the full contribution guidelines see the [CONTRIBUTING.md] document.
-
-## Pull requests
-
- 1. [Fork] the project, clone your fork, and configure the remotes.
-    1. If you're submitting a bug fix or refactor pull request then
-    target the repository `master` branch.
-    2. If you're submitting a new feature or enhancement that changes
-    functionality then target the next release branch in the
-    repository (which is currently `3.3.0-alpha`).
- 3. Commit your changes in logical units.
- 4. Make sure all the example scenes are still working.
- 5. Push your topic branch up to your fork.
- 6. [Open a Pull Request] with a clear title and description.
+We're not currently in a place where accepting contributions would be helpful. But as soon as we're ready we'll let you know!
 
 ## License
 
-Code released under the [MIT License].
+Code released under the [MIT License][License].
 
-[SteamVR Plugin]: https://www.assetstore.unity3d.com/en/#!/content/32647
-[SteamVR Plugin for Unity3d Github Repo]: https://github.com/ValveSoftware/openvr/tree/master/unity_package/Assets/SteamVR
-[Oculus Utilities]: https://developer.oculus.com/downloads/package/oculus-utilities-for-unity-5/
-[Ximmerse Unity SDK]: https://github.com/Ximmerse/SDK/tree/master/Unity
-[Google VR SDK for Unity]: https://developers.google.com/vr/unity/download
-[MIT License]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/LICENSE
-[CONTRIBUTING.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/CONTRIBUTING.md
-[MADEWITHVRTK.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/MADEWITHVRTK.md
-[DOCUMENTATION.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/DOCUMENTATION.md
-[GETTING_STARTED.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/GETTING_STARTED.md
-[THANK_YOU_CREDITS.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/THANK_YOU_CREDITS.md
-[EXAMPLES.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/EXAMPLES.md
-[Fork]: http://help.github.com/fork-a-repo/
-[Open a Pull Request]: https://help.github.com/articles/using-pull-requests/
-[FAQ.md]: https://github.com/thestonefox/SteamVR_Unity_Toolkit/blob/master/FAQ.md
-[Patreon]: https://www.patreon.com/vrtk
+## Disclaimer
+
+These materials are not sponsored by or affiliated with Unity Technologies or its affiliates. "Unity" is a trademark or registered trademark of Unity Technologies or its affiliates in the U.S. and elsewhere.
+
+[VRTK-Image]: https://user-images.githubusercontent.com/1029673/40060519-bb122e8c-584e-11e8-8402-ca168b327671.png
+[Unity]: https://unity3d.com/
+[Made With VRTK]: https://www.vrtk.io/madewith.html
+[License]: LICENSE.md
+[VRTK.Prefabs]: https://github.com/ExtendRealityLtd/VRTK.Prefabs
+[VRTK.Prefabs Getting Started]: https://github.com/ExtendRealityLtd/VRTK.Prefabs#getting-started
+[Unity Hub]: https://docs.unity3d.com/Manual/GettingStartedUnityHub.html
+
+[License-Badge]: https://img.shields.io/github/license/ExtendRealityLtd/VRTK.svg
+[Backlog-Badge]: https://img.shields.io/badge/project-backlog-78bdf2.svg
+[Academy-Badge]: https://img.shields.io/badge/learn-academy-f3aeae.svg
+
+[Slack-Badge]: https://img.shields.io/badge/slack--E24663.svg?style=social&logo=slack
+[Videos-Badge]: https://img.shields.io/badge/youtube--e52d27.svg?style=social&logo=youtube
+[Twitter-Badge]: https://img.shields.io/badge/twitter--219eeb.svg?style=social&logo=twitter
+
+[License]: LICENSE.md
+[Backlog]: http://tracker.vrtk.io
+[Academy]: https://academy.vrtk.io
+
+[Slack]: http://invite.vrtk.io
+[Videos]: http://videos.vrtk.io
+[Twitter]: https://twitter.com/VR_Toolkit
+[Bowling Tutorial]: https://github.com/ExtendRealityLtd/VRTK.Tutorials.VRBowling
